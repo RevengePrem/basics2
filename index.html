@@ -1,0 +1,45 @@
+<html>
+    <style>
+        #box1{background-color: brown;text-align: center;}
+        #box2{background-color: aqua;text-align: center;}
+        #box3{background-color: red;text-align: center;}
+        div {
+            width: 300px;
+            border: 15px black;
+            padding: 50px;
+            margin: auto;
+            }
+    </style>
+        <body>
+            <div id="box1">
+                <h2>Name: Premjyoti Dhar
+                </h2>
+                <h3>Reg No: 202111504</h3>
+            </div>
+            <div id="box2">
+                <img onmouseover="largePic(this)" onmouseout="normPic(this)" src="Spidey.jpg" width="320px" height="180px">
+                <h2 onmouseover="largeText(this)" onmouseout="normText(this)">Favourite Person:- Spiderman</h2>  
+            </div>
+            <div id="box3">
+                <h2>Official Email ID:</h2>
+                <h3>premjyoti_202111504@smit.smu.edu.in</h3>
+            </div>
+        </body>
+        <script>
+            function largePic(x){
+            x.style.width="640px";
+            x.style.height="360px";
+        }
+            function normPic(x){
+            x.style.width="320px";
+            x.style.height="180px";
+            }
+            function largeText(x){
+            x.style.fontSize="x-large";
+        }
+        function normText(x){
+            x.style.fontSize="medium";
+        }
+
+        </script>
+</html>
